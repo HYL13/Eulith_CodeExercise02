@@ -1,1 +1,0 @@
-# Eulith_CodeExercise02
