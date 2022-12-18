@@ -1,0 +1,18 @@
+=============== Dec 17, 2022 (PST) ===============
+14:32:43.042276 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+14:32:43.056012 db@open opening
+14:32:43.056874 version@stat F·[] S·0B[] Sc·[]
+14:32:43.061074 db@janitor F·2 G·0
+14:32:43.061101 db@open done T·5.0475ms
+14:32:43.099597 db@close closing
+14:32:43.099663 db@close done T·65.083µs
+=============== Dec 17, 2022 (PST) ===============
+14:32:50.325926 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+14:32:50.326098 version@stat F·[] S·0B[] Sc·[]
+14:32:50.326128 db@open opening
+14:32:50.326205 journal@recovery F·1
+14:32:50.327225 journal@recovery recovering @1
+14:32:50.332535 memdb@flush created L0@2 N·11 S·618B "Hl%..PFc,v4":"r\x00\x00..PFc,v6"
+14:32:50.333554 version@stat F·[1] S·618B[618B] Sc·[0.25]
+14:32:50.349840 db@janitor F·3 G·0
+14:32:50.349877 db@open done T·23.738083ms
