@@ -23,4 +23,4 @@ Please check out the contract code under truffle_proj/contracts/DummyZeroEx.sol,
 There are two ways of testing, one is calling the function in the dummy contract and print the result:
 ![avatar](DummyZeroEx_terminal_output.png)
 
-another way of testing is write a test contract (truffle_proj/test/DummyZeroExTest.sol) and run "truffle test", it would run the contract on local blockchain, grab the result and do assertion for me.
+another way of testing is to write a test contract (truffle_proj/test/DummyZeroExTest.sol) and run "truffle test", it would run the contract on local blockchain, grab the result and do assertion for me.
