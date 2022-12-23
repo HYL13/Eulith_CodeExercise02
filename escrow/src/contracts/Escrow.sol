@@ -23,13 +23,8 @@ contract Escrow {
 
     // this function should be called by the sender right after it successfully sends Ether to the contract,
     // to correctly set the passcode and recipient address
-    function setTerms(string memory _passcode, address _recipient)
-        public
-    {
-        require(
-            sender == msg.sender,
-            "Sender doesn't match with the record!"
-        );
+    function setTerms(string memory _passcode, address _recipient) public {
+        require(sender == msg.sender, "Sender doesn't match with the record!");
         passcode = _passcode;
         recipient = _recipient;
     }
@@ -49,10 +44,7 @@ contract Escrow {
     // Sender can cancel the ongoing transaction, Ethers are then sent back to the sender and reset the transaction status
     function cancelTransaction() public {
         require(transactionStatus, "There's no ongoing transaction!");
-        require(
-            sender == msg.sender,
-            "Sender doesn't match with the record!"
-        );
+        require(sender == msg.sender, "Sender doesn't match with the record!");
         send(sender, getBalance());
         reset();
     }
